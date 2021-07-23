@@ -7,6 +7,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 		<link href="cursor.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans">
+			<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,8 +32,7 @@
 		}
 .button {
 		width: 250px;
-		background-color: #;
-		/* Green */
+		background-color: White;
 		border: none;
 		color: white;
 		padding: 16px 32px;
@@ -67,10 +67,15 @@
 
 	}
 	#example1 {
-  background: url(https://images.unsplash.com/37/IHLjdHdzSvi0rgUMMlSK_TE3_0286.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=40);
+  background: url(3662.png);
   background-repeat: no-repeat;
   background-size: auto;
 	background-attachment: fixed;
+}
+
+::selection{
+	background: #000066;
+	color: #ff0000;
 }
 .okok{
 	color: white;
@@ -91,12 +96,19 @@
 html{
 	scroll-behavior: smooth;
 }
-.cardhover: hover{
-	transition-duration: 0.7s;
-	cursor: pointer;
-	transform: scale(0.5);
+
+.w3-hover-shadow{
+  transition-duration: 0.7s;
+	border-radius: 5px;
+}
+.w3-hover-shadow-img{
+  transition-duration: 0.3s;
+	border-radius: 5px;
 }
 
+.okok{
+	padding-top: 15px;
+}
 
 
 	</style>
@@ -115,10 +127,10 @@ html{
 <div class="w3-content" style="max-width:700px">
 
 
-	<div class="w3-row w3-padding-16  " id="about">
-<div class=" m6 w3-padding-small w3-center">
+<div class="w3-row" id="about">
+<div class=" m6  w3-center">
 
-	<header class="w3-container w3-center w3-padding-16 w3-row">
+	<header class="w3-container w3-center w3-row">
 		<h1 class="w3-xxlarge w3-text-black okok w3-left">Sabarish</h1>
 
   </header>
@@ -134,38 +146,32 @@ html{
 	</div>
 
 
-<div id="example1">
+<div id="">
 <div class="w3-row w3-padding-16  " id="about">
 <div class=" m6 w3-padding-small w3-center">
 	
 
 	<header class="w3-container w3-center w3-padding-16 ">
-		<h1 class="w3-xxxlarge w3-bold okok"></b>Space sounds interesting, but life is more</b></h1>
 
-		<div class="container w3-center w3-margin">
+
+		<!--<div class="container w3-center w3-margin">
   <div id="cursor"></div>
   <p class="clickableCursor one"> Hello </p>
-</div>
-
-    <h5 class="okok">The space within humans!</h5>
-		<a href="#records"><button type="button " id="cursor" class="button button2 clickableCursor one" >Records</button><p class="clickableCursor one"> Hello </p></a>
-  </header>
-
-
-	<div class="w3-row-padding" id="records">
+</div>-->
+<div class="w3-row-padding" id="records">
 
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Text
-
+        <li class="w3-xxxlarge rounded">
+					<img class="w3-card-hover-img rounded"src="363.png">
 				</li>
       </ul>
     </div>
 
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Text
-
+        <li class="w3-xlarge rounded">
+<img src="363.png">
 				</li>
 
       </ul>
@@ -173,12 +179,21 @@ html{
 
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Text
-
+        <li class="w3-xlarge rounded">
+<img src="363.png">
 				</li>
       </ul>
     </div>
   </div>
+
+
+
+
+		<a href="#records"><button type="button " id="cursor" class="clickableCursor one" ></button><p class="clickableCursor one"> Hello </p></a>
+  </header>
+
+
+	
 
 
 
