@@ -41,7 +41,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet">
 <style>
 	body,
-	h1,
+	h1,h2,
 	h5,
 	h3,
 	h4,
@@ -165,6 +165,44 @@
 	.w3-padding-top{
 		padding-top: 25px;
 	}
+	.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: 
+#1f1f1f
+;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+.w3-border:hover{
+	border: 2px solid red;
+	transition-duration: 0.3s;
+	border-radius: 10px 0 10px 0;
+}
 </style>
 
 
@@ -181,10 +219,15 @@
 			<span></span>
 
 			<ul id="menu" data-aos="fade-up">
-				<a href="" ><li data-aos="slide-up">Work</li></a>
-				<a href="" ><li data-aos="slide-up">Dribble</li></a>
+				<li data-aos="slide-up"><a class="button22" type="button" data-hover="Work" data-active="I'M ACTIVE"><span>Work</span></a></li>
+				
+				<li data-aos="slide-up"><a class="button22" type="button" data-hover="Dribbble" data-active="I'M ACTIVE"><span>Dribbble</span></a></li>
+				<li data-aos="slide-up"><a class="button22" type="button" data-hover="Github" data-active="I'M ACTIVE"><span>Github</span></a></li>
+				<li data-aos="slide-up"><a class="button22" type="button" data-hover="Contact" data-active="I'M ACTIVE"><span>Contact</span></a></li>
+				<li data-aos="slide-up"><a class="button22" type="button" data-hover="Resume" data-active="I'M ACTIVE"><span>Resume</span></a></li>
+				<!--<a href="" ><li data-aos="slide-up">Dribble</li></a>
 				<a href=""><li data-aos="slide-up">Github</li></a>
-				<a href="" ><li data-aos="slide-up">Contact</li></a>
+				<a href="" ><li data-aos="slide-up">Contact</li></a>-->
 			</ul>
 			</div>		
 	</nav>
@@ -278,7 +321,9 @@ AOS.init({
     <div class="w3-twothird">
       <h1 class="w3-text-black">Lorem Ipsum</h1>
       <p class="w3-text-black w3-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-			<p class="one w3-text-black p-5"> Read more </p>
+			<button class="bg-black hover:bg-red-700 p-3 clickableCursor ml-5">
+ <p class="text-xs">Read more</p> 
+</button>
 			
 		<!--<div class="p-5">
 		<a href="#records"><button type="button" id="" class=" one" ></button></a></div>-->
@@ -293,6 +338,48 @@ AOS.init({
 					<div id="example1">
 					<div class="w3-row w3-padding-16  " id="about">
 					<div class=" m6 w3-padding-small w3-center">
+
+
+
+						<div class="w3-row w3-padding-16  " id="about" data-aos="fade-up">
+<div class=" m6 w3-padding-small w3-center">
+
+	<header class="w3-container w3-center w3-padding-16 " >
+		<h1 class="w3-xxlarge w3-text-black okok " ></b>UX Case Studies</b></h1>
+
+  </header>
+
+
+	<div class="w3-row-padding" id="records">
+
+
+    <div class="w3-third w3-margin-bottom rounded"> 
+      <ul class="w3-ul w3-center w3-hover-shadow rounded hover:bg-purple-400 bg-gray-50"  >
+        <li class="w3-xlarge w3-padding-32" >
+				</li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom rounded">
+      <ul class="w3-ul w3-center w3-hover-shadow rounded hover:bg-transparent bg-gray-100" >
+        <li class="w3-xlarge w3-padding-32" >
+				</li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom rounded">
+      <ul class="w3-ul w3-center w3-hover-shadow rounded hover:bg-purple-700 bg-gray-200" >
+        <li class="w3-xlarge w3-padding-32" >
+				</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
 					</div>
 					</div>
 					</div>
@@ -303,7 +390,7 @@ AOS.init({
 <div class=" m6 w3-padding-small w3-center">
 
 	<header class="w3-container w3-center w3-padding-16 " >
-		<h1 class="w3-xxlarge w3-text-black okok " ></b>Space sounds interesting, but life is more</b></h1>
+		<h1 class="w3-xxlarge w3-text-black okok " ></b>UX Case Studies</b></h1>
 
   </header>
 
@@ -311,23 +398,41 @@ AOS.init({
 	<div class="w3-row-padding" id="records">
 
 
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32" >
+    <div class="w3-third w3-margin-bottom rounded"> 
+      <ul class="w3-ul w3-center w3-hover-shadow rounded hover:bg-purple-400 bg-gray-50"  >
+        <li class="w3-xlarge w3-padding-32" >
+				</li>
+      </ul>
+    </div>
+		  <div class="w3-third w3-margin-bottom rounded"> 
+      <ul class="w3-ul w3-center w3-hover-shadow rounded hover:bg-purple-400 bg-gray-50"  >
+        <li class="w3-xlarge w3-padding-32" >
+				</li>
+      </ul>
+    </div>
+		  <div class="w3-third w3-margin-bottom rounded"> 
+      <ul class="w3-ul w3-center w3-hover-shadow rounded hover:bg-purple-400 bg-gray-50"  >
+        <li class="w3-xlarge w3-padding-32" >
+				</li>
+      </ul>
+    </div>
+		  <div class="w3-third w3-margin-bottom rounded"> 
+      <ul class="w3-ul w3-center w3-hover-shadow rounded hover:bg-purple-400 bg-gray-50"  >
+        <li class="w3-xlarge w3-padding-32" >
 				</li>
       </ul>
     </div>
 
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-center w3-hover-shadow" >
-        <li class="w3-black w3-xlarge w3-padding-32" >
+    <div class="w3-third w3-margin-bottom rounded">
+      <ul class="w3-ul w3-center w3-hover-shadow rounded hover:bg-transparent bg-gray-100" >
+        <li class="w3-xlarge w3-padding-32" >
 				</li>
       </ul>
     </div>
 
-		 <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-center w3-hover-shadow" >
-        <li class="w3-black w3-xlarge w3-padding-32" >
+    <div class="w3-third w3-margin-bottom rounded">
+      <ul class="w3-ul w3-center w3-hover-shadow rounded hover:bg-purple-700 bg-gray-200" >
+        <li class="w3-xlarge w3-padding-32" >
 				</li>
       </ul>
     </div>
@@ -335,6 +440,12 @@ AOS.init({
   </div>
 </div>
 </div>
+
+
+
+
+
+
 </div>
 
 
@@ -343,7 +454,119 @@ AOS.init({
 
 
 
+<div class="min-w-screen h-screen animated fadeIn faster  left-0 top-0 flex justify-center items-center inset-0 z-50 outline-none focus:outline-none bg-no-repeat bg-center bg-cover"  style="background-image: url();" id="modal-id">
+  
+<div class="relative min-h-screen flex p-3 items-center justify-center " > 
+    <div class="grid  gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2 " >
+        <div class="flex flex-col ">
+            <div class="bg-white p-4  hvr-underline-from-left shadow-md hover:shadow-md w3-border rounded" >
+                <div class="flex-none lg:flex" >
+                    <div class=" h-full w-full lg:h-48 lg:w-48   lg:mb-0 mb-3 rounded">
+                        <img src="https://images.unsplash.com/photo-1622180203374-9524a54b734d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"
+                            alt="Just a flower" class=" w-full  object-scale-down lg:object-cover  lg:h-48 ">
+                    </div>
+                    <div class="flex-auto ml-3 justify-evenly py-2">
+                        <div class="flex flex-wrap ">
 
+                            <h2 class="flex-auto text-lg font-medium text-black">Massive Dynamic</h2>
+                        </div>
+                        <p class="mt-3"></p>
+                      
+
+                        <div class="flex space-x-3 text-sm font-medium">
+                            <div class="flex-auto flex space-x-3">
+                          
+                            </div>
+                            <button
+                                class="mb-2 md:mb-0 bg-white px-4 py-2 shadow-sm tracking-wider border text-gray-600 rounded-full hover:bg-gray-100 inline-flex items-center space-x-2 "
+                                type="button" aria-label="like">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col ">
+            <div class="bg-white shadow-md  rounded p-4 hvr-underline-from-left shadow-md hover:shadow-md w3-border">
+                <div class="flex-none lg:flex">
+                    <div class=" h-full w-full lg:h-48 lg:w-48   lg:mb-0 mb-3">
+                        <img src="https://images.unsplash.com/photo-1585399000684-d2f72660f092?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80"
+                            alt="Just a flower" class=" w-full  object-scale-down lg:object-cover  lg:h-48 rounded">
+                    </div>
+                    <div class="flex-auto ml-3 justify-evenly py-2">
+                        <div class="flex flex-wrap ">                          
+                            <h2 class="flex-auto text-lg font-medium text-black">Umbrella Corporation</h2>
+                        </div>
+                        <p class="mt-3"></p>
+                       
+                        <div class="flex space-x-3 text-sm font-medium">
+                            <div class="flex-auto flex space-x-3">
+
+                            </div>
+                            <button
+                                class="mb-2 md:mb-0 bg-white px-4 py-2 shadow-sm tracking-wider border text-gray-600 rounded-full hover:bg-gray-100 inline-flex items-center space-x-2 "
+                                type="button" aria-label="like">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+				<div class="flex flex-col ">
+            <div class="bg-white p-4  hvr-underline-from-left shadow-md hover:shadow-md w3-border rounded" >
+                <div class="flex-none lg:flex" >
+                    <div class=" h-full w-full lg:h-48 lg:w-48   lg:mb-0 mb-3 rounded">
+                        <img src="https://images.unsplash.com/photo-1622180203374-9524a54b734d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"
+                            alt="Just a flower" class=" w-full  object-scale-down lg:object-cover  lg:h-48 ">
+                    </div>
+                    <div class="flex-auto ml-3 justify-evenly py-2">
+                        <div class="flex flex-wrap ">
+
+                            <h2 class="flex-auto text-lg font-medium text-black">Massive Dynamic</h2>
+                        </div>
+                        <p class="mt-3"></p>
+                      
+
+                        <div class="flex space-x-3 text-sm font-medium">
+                            <div class="flex-auto flex space-x-3">
+                          
+                            </div>
+                            <button
+                                class="mb-2 md:mb-0 bg-white px-4 py-2 shadow-sm tracking-wider border text-gray-600 rounded-full hover:bg-gray-100 inline-flex items-center space-x-2 "
+                                type="button" aria-label="like">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+				<div class="flex flex-col ">
+            <div class="bg-white p-4  hvr-underline-from-left shadow-md hover:shadow-md w3-border rounded" >
+                <div class="flex-none lg:flex" >
+                    <div class=" h-full w-full lg:h-48 lg:w-48   lg:mb-0 mb-3 rounded">
+                        <img src="https://images.unsplash.com/photo-1622180203374-9524a54b734d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"
+                            alt="Just a flower" class=" w-full  object-scale-down lg:object-cover  lg:h-48 ">
+                    </div>
+                    <div class="flex-auto ml-3 justify-evenly py-2">
+                        <div class="flex flex-wrap ">
+
+                            <h2 class="flex-auto text-lg font-medium text-black">Massive Dynamic</h2>
+                        </div>
+                        <p class="mt-3"></p>
+                      
+
+                        <div class="flex space-x-3 text-sm font-medium">
+                            <div class="flex-auto flex space-x-3">
+                          
+                            </div>
+                            <button
+                                class="mb-2 md:mb-0 bg-white px-4 py-2 shadow-sm tracking-wider border text-gray-600 rounded-full hover:bg-gray-100 inline-flex items-center space-x-2 "
+                                type="button" aria-label="like">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
 
 
