@@ -84,12 +84,12 @@ body{
 	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
 }
 #menu li{
-	padding: 10px 0;
-	font-size: 20px;
+	padding: 6px 0;
+	font-size: 15px;
 	padding-left: 10px;
 	border-radius: 0px;
-	padding-top: 10px;
-	margin: 10px
+	padding-top: 5px;
+	margin: 7px
 }
 
 #menuToggle input:checked ~ ul{
