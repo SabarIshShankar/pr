@@ -15,7 +15,6 @@ body {
   position: fixed;
   width: 5px;
   height: 5px;
-  border: 2px solid white;
   transition: .1s;
   border-radius: 50%;
   pointer-events: none;
@@ -30,16 +29,17 @@ body {
 #cursor::before {
   content: '';
   position: absolute;
-  height: 7px;
-  width: 7px;
+  height: 9px;
+  width: 9px;
   border-radius: 100%;
   background-color: rgb(121, 202, 255);
 }
 
 .clickableCursor {
 position: relative;
-  color: rgb(255, 255, 255);
-  background: rgb(8, 8, 8);
+  color: rgb(3, 3, 3);
+  background: transparent;
+	border: 1px solid rgb(184, 184, 184);
   padding: 15px;
 	border-radius: 50px;
 		transition-duration: 0.4s;
@@ -49,7 +49,7 @@ position: relative;
 .clickableCursor:hover{
 	transition-duration: 0.6s;
 	color:rgb(255, 255, 255);
-background-color: rgb(177, 177, 177);
+background-color: rgb(0, 0, 0);
 }
 
 
