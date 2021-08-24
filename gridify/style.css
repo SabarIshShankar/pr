@@ -43,7 +43,7 @@
 }
 
 .itemg {
-	padding: 5px;
+	padding: 2px;
 }
 
 .itemg img {
@@ -52,10 +52,7 @@
 }
 
 .column.size-1of3 {
-	width: 33.333%;
+	width: 33.3%;
 	float: left;
 }
 
-.itemg img:hover {
-	zoom: 1;
-}
