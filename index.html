@@ -296,6 +296,48 @@
 	.button2 {
 		font-family: 'HelveticaNeue-Extended', Arial;
 	}
+
+
+
+
+.containere {
+  position: relative;
+	width: 90%;
+}
+
+.imagee {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlaye {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #9700ff;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.containere:hover .overlaye {
+  width: 100%;
+}
+
+.texte {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
 </style>
 
 
@@ -469,9 +511,15 @@ AOS.init({
 				<img class="img-fluid hoverr" src="https://github.com/SabarIshShankar/pic/blob/master/Frame%204.png?raw=true">
 				</div>
 
-						<!--<div class="itemg" data-aos="slide-up">
-			<img class="img-fluid hoverr" src="https://github.com/SabarIshShankar/pic/blob/master/Frame%2026.png?raw=true">
-			</div>-->
+						<div class="itemg" data-aos="slide-up">
+			
+			<div class="containere">
+  <img src="https://github.com/SabarIshShankar/pic/blob/master/Frame%204.png?raw=true" alt="Avatar" class="imagee">
+  <div class="overlaye">
+    <div class="texte">spacesurf</div>
+  </div>
+</div>
+</div>
 
 				
 				
