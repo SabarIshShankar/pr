@@ -1,291 +1,202 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>SPACESURF</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href=".css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=DM+Sans"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <link
+      href="//db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="shortcut icon" href="fav.svg" />
+    <meta name="theme-color" content="#000" />
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>SPACESURF</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link href=".css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans">
-	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
-	<script src="https://unpkg.com/aos@2.3.0/dist/aos.js">
+    <meta name="msapplication-navbutton-color" content="#000" />
 
-	</script>
-	<link href="//db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text" rel="stylesheet" type="text/css"
-	/>
-	<link rel="shortcut icon" href="fav.svg">
-	<meta name="theme-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link href="navbar.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8T1YQ608GS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-	<meta name="msapplication-navbutton-color" content="#000">
+      gtag("config", "G-8T1YQ608GS");
+    </script>
 
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-	<link href="navbar.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8T1YQ608GS">
+    <!--meta.seo-->
+    <meta name="description" content="Sabarish" />
+    <meta name="author" content="NextStage" />
+    <meta name="copyright" content="NextStage" />
+    <meta name="language" content="en" />
+    <meta name="url" content="https://s.nextstage.in" />
+    <meta name="category" content="Work,Portfolio,Design,Business" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="rating" content="General" />
+    <meta
+      name="keywords"
+      content="Sabarish,NextStage,SpaceSurf,Design,Business,Development"
+    />
+    <meta name="og:email" content="sabarishshankar90@gmail.com" />
+    <meta name="og:country-name" content="India" />
+    <meta name="og:region" content="Tamil Nadu" />
+    <meta name="og:site_name" content="Sabarish" />
+    <meta name="og:description" content="Sabarish - NextStage" />
+    <meta name="og:url" content="https://s.nextstage.in" />
+    <meta name="og:site_name" content="Spacesurf" />
+    <link rel="canonical" href="https://s.nextstage.in" />
+  </head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="//db.onlinewebfonts.com/c/040a78b437acd0433612f92e61d04a1b?family=Gilroy-Medium"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <style>
+    @import url(//db.onlinewebfonts.com/c/3cff9206b4c8d578245ef1aaeeaf9e84?family=SF + Pro + Display);
+    @font-face {
+      font-family: "SF Pro Display";
+      src: url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.eot");
+      src: url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.eot?#iefix")
+          format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.woff2")
+          format("woff2"),
+        url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.woff")
+          format("woff"),
+        url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.ttf")
+          format("truetype"),
+        url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.svg#SF Pro Display")
+          format("svg");
+    }
 
-	</script>
-	<script>
+    .button {
+      width: 250px;
+      background-color: White;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.5s;
+      cursor: pointer;
+    }
+
+    .w3-card {
+      border-radius: 2px;
+    }
+
+    .button2:hover {
+      background-color: black;
+      color: white;
+    }
+
+    ::selection {
+      background: #000066;
+      color: #8eb1ff;
+    }
+
+    .okok {
+      color: white;
+    }
+
+    html {
+      scrollbar-width: normal;
+      scrollbar-color: #fff #fff;
+    }
+
+    html::-webkit-scrollbar {
+      width: 15px;
+    }
+
+    html::-webkit-scrollbar-thumb {
+      background-color: #585bc1;
+      border-radius: 10px;
+    }
+
+    html::-webkit-scrollbar-thumb:hover {
+      background-color: #4d52ff;
+
+      border-radius: 10px;
+    }
+
+    html::-webkit-scrollbar-track {
+      background-color: #000;
+    }
+
+    html::-webkit-scrollbar-track:hover {
+      background-color: #3e3e3e;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .item {
+      width: 32%;
+      padding-bottom: 32%;
+      /* Same as width, sets height */
+      margin-bottom: 2%;
+      /* (100-32*3)/2 */
+      position: relative;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .w3-hover-shadow {
+      transition-duration: 0.7s;
+    }
+
+    .w3-hover-shadow:hover {
+      transition-duration: 0.3s;
+    }
+
+    .okok {
+      padding-top: 15px;
+    }
+
+    .hoverr:hover {
+      transition-duration: 0.05s;
+      transform: scale(1.02);
+      border-radius: 2px;
+    }
 		
-		window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8T1YQ608GS');
-	</script>
-
-
-	<!--meta.seo-->
-	<meta name="description" content="Sabarish">
-	<meta name="author" content="NextStage">
-	<meta name="copyright" content="NextStage">
-	<meta name="language" content="en">
-	<meta name="url" content="https://s.nextstage.in">
-	<meta name="category" content="Work,Portfolio,Design,Business">
-	<meta name="coverage" content="Worldwide">
-	<meta name="rating" content="General">
-	<meta name="keywords" content="Sabarish,NextStage,SpaceSurf,Design,Business,Development">
-	<meta name="og:email"content="sabarishshankar90@gmail.com">
-	<meta name="og:country-name" content="India">
-	<meta name="og:region" content="Tamil Nadu">
-	<meta name="og:site_name" content="Sabarish">
-	<meta name="og:description" content="Sabarish - NextStage">
-	<meta name="og:url" content="https://s.nextstage.in">
-	<meta name="og:site_name" content="Spacesurf">
-	<link rel="canonical" href="https://s.nextstage.in">
-
-
-
-</head>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet">
-<link href="//db.onlinewebfonts.com/c/040a78b437acd0433612f92e61d04a1b?family=Gilroy-Medium" rel="stylesheet" type="text/css"
-/>
-<style>
-	@import url(//db.onlinewebfonts.com/c/3cff9206b4c8d578245ef1aaeeaf9e84?family=SF+Pro+Display);
-	@font-face {
-		font-family: "SF Pro Display";
-		src: url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.eot");
-		src: url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.woff") format("woff"), url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.svg#SF Pro Display") format("svg");
-	}
-
-
-
-	.button {
-		width: 250px;
-		background-color: White;
-		border: none;
-		color: white;
-		padding: 16px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		margin: 4px 2px;
-		transition-duration: 0.5s;
-		cursor: pointer;
-	}
-
-	.w3-card {
-		border-radius: 2px;
-
-	}
-
-
-	.button2:hover {
-		background-color: black;
-		color: white;
-
-
-	}
-
-	::selection {
-		background: #000066;
-		color: #8eb1ff;
-	}
-
-	.okok {
-		color: white;
-	}
-
-
-	html {
-		scrollbar-width: normal;
-		scrollbar-color: #fff #fff;
-	}
-
-	html::-webkit-scrollbar {
-		width: 15px;
-	}
-
-	html::-webkit-scrollbar-thumb {
-		background-color: #585bc1;
-		border-radius: 10px;
-	}
-
-	html::-webkit-scrollbar-thumb:hover {
-		background-color: #4d52ff;
-
-		border-radius: 10px;
-	}
-
-	html::-webkit-scrollbar-track {
-		background-color: #000;
-
-	}
-
-	html::-webkit-scrollbar-track:hover {
-		background-color:#3e3e3e;
-
-	}
-	.container {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-
-	.item {
-		width: 32%;
-		padding-bottom: 32%;
-		/* Same as width, sets height */
-		margin-bottom: 2%;
-		/* (100-32*3)/2 */
-		position: relative;
-	}
-
-	html {
-		scroll-behavior: smooth;
-	}
-
-	.w3-hover-shadow {
-		transition-duration: 0.7s;
-
-	}
-
-	.w3-hover-shadow:hover {
-		transition-duration: 0.3s;
-
-	}
-
-	.okok {
-		padding-top: 15px;
-	}
-
-	.hoverr:hover {
-		transition-duration: 0.05s;
-		transform: scale(1.02);
-		border-radius: 2px;
-
-	}
-</style>
-
-<style>
-	#img {
-		background: url(https://ipfs.pixura.io/ipfs/QmWMThLe1MLPHUHHfqMm79ZtALAfVUycN6jKLgnuqmcWZF);
-		background-repeat: no-repeat;
-		background-size: auto;
-		background-attachment: fixed;
-	}
-
-	#example1 {
-		background: url(https://cdnb.artstation.com/p/assets/images/images/034/931/443/large/muhammx-nafay-insta-le_nafay-clouds-city.jpg?1613633259);
-		background-repeat: no-repeat;
-		background-size: auto;
-		background-attachment: fixed;
-	}
-
-	.w3-padding-top {
-		padding-top: 25px;
-	}
-
-	.hvr-underline-from-left {
-		display: inline-block;
-		vertical-align: middle;
-		-webkit-transform: translateZ(0);
-		transform: translateZ(0);
-		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
-		-moz-osx-font-smoothing: grayscale;
-		position: relative;
-		overflow: hidden;
-	}
-
-	.hvr-underline-from-left:before {
-		content: "";
-		position: absolute;
-		z-index: -1;
-		left: 0;
-		right: 100%;
-		bottom: 0;
-		background: #1f1f1f;
-		height: 4px;
-		-webkit-transition-property: right;
-		transition-property: right;
-		-webkit-transition-duration: 0.1s;
-		transition-duration: 0.1s;
-		-webkit-transition-timing-function: ease-out;
-		transition-timing-function: ease-out;
-	}
-
-	.hvr-underline-from-left:hover:before,
-	.hvr-underline-from-left:focus:before,
-	.hvr-underline-from-left:active:before {
-		right: 0;
-	}
-
-	.w3-border:hover {
-		border: 0.3px solid;
-		transition-duration: 0.3s;
-		border-radius: 10px 0 10px 0;
-	}
-
-
-
-	.container-o {
-		position: relative;
-
-
-	}
-
-	.image-o {
-		display: block;
-		width: 100%;
-		height: auto;
-	}
-
-	.overlay {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 100%;
-		width: 100%;
-		opacity: 0;
-		transition: .5s ease;
-		background-color: #008CBA;
-	}
-
-	.container-o:hover .overlay {
-		opacity: 1;
-	}
-
-	@font-face {
-		font-family: HelveticaNeue-Extended;
-		src: url("font.otf") format("opentype");
-	}
-
-		@font-face {
-		font-family: NSR;
-		src: url("nsr.ttf") format("opentype");
-	}
-
 	body,
 	h1,
 	h2,
@@ -297,350 +208,439 @@
 		font-family: 'HelveticaNeue-Extended', Arial;
 	}
 
+	.text-large {
+		font-size: 45px;
+	}
 
+	.w3-text-large {
+		font-size: 15px;
+	}
 
+	.mt-10 {
+		margin-top: 20px;
+	}
 
-.containere {
-  position: relative;
-	width: 100%;
-}
+	.ml-10 {
+		margin-left: 15px;
+	}
 
-.imagee {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+	.whitefont {
+		color: white
+	}
 
-.overlaye {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgb(41,0,184);
-background: linear-gradient(45deg, rgba(41,0,184,1) 0%, rgba(245,0,255,1) 100%);
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: .5s ease;
-}
+	.no-shadows {
+		box-shadow: none !important;
+	}
 
-.containere:hover .overlaye {
-  width: 100%;
-}
+	.w3-padding-side {
+		margin-left: 20px;
+	}
 
-.texte {
-  color: white;
-  font-size: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-}
-.text-2xl{
-	font-size: 55px;
-}
-p span {
-  display: block;
-}
-.mt-10{
-	margin-top: 65px;
-	margin-left: 15px;
-}
-</style>
+	button {
+		background: #1a1a1a;
+		border: none;
+		color: white;
+		padding: 8px 14px 8px 14px;
+	}
 
+	button:hover {
+		background: black;
+		transition: 0.5s;
+		color: white;
+	}
 
+	.itemg {
+		padding: 8px;
+	}
 
-<body class="w3-black">
+	.itemg img {
+		width: 100%;
+		height: auto;
+	}
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-	<nav role="navigation">
-		<div id="menuToggle" data-aos="fade-up">
-			<input type="checkbox"/>
+	.column.size-1of3 {
+		width: 50%;
+		float: left;
+	}
 
-			<span></span>
-			<span></span>
-			<span></span>
+	.padding-large {
+		margin: 20px;
+	}
+  </style>
 
-			<ul id="menu">
-				<li data-aos="fade-down-left"><a href="#gallery"class="button22" type="button" data-hover="Work" data-active="I'M ACTIVE"><span>nextstage</span></a></li>
-				<li data-aos="slide-up"><a href="https://dribbble.com/sabarish19"class="button22" type="button" data-hover="Dribbble" data-active="I'M ACTIVE"><span>Gallery</span></a></li>
-				<li data-aos="slide-up"><a href="https://www.github.com/SabarIshShankar"class="button22" type="button" data-hover="Github" data-active="I'M ACTIVE"><span>Github</span></a></li>
-				<li data-aos="slide-up"><a href="/contact"class="button22" type="button" data-hover="Contact" data-active="I'M ACTIVE"><span>Contact</span></a></li>
-				<li data-aos="slide-up"><a href="/resume" class="button22" type="button" data-hover="Resume" data-active="I'M ACTIVE"><span>Resume</span></a></li>
-				<!--<a href="" ><li data-aos="slide-up"></li></a>
-				<a href=""><li data-aos="slide-up">Github</li></a>
-				<a href="" ><li data-aos="slide-up">Contact</li></a>-->
-			</ul>
-			</div>		
-	</nav>
+  <style>
+    #img {
+      background: url(https://ipfs.pixura.io/ipfs/QmWMThLe1MLPHUHHfqMm79ZtALAfVUycN6jKLgnuqmcWZF);
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-attachment: fixed;
+    }
 
+    #example1 {
+      background: url(https://cdnb.artstation.com/p/assets/images/images/034/931/443/large/muhammx-nafay-insta-le_nafay-clouds-city.jpg?1613633259);
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-attachment: fixed;
+    }
 
+    .w3-padding-top {
+      padding-top: 25px;
+    }
 
+    .hvr-underline-from-left {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden;
+    }
 
-	<div class="w3-content" style="max-width:1100px">
+    .hvr-underline-from-left:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 100%;
+      bottom: 0;
+      background: #1f1f1f;
+      height: 4px;
+      -webkit-transition-property: right;
+      transition-property: right;
+      -webkit-transition-duration: 0.1s;
+      transition-duration: 0.1s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
 
+    .hvr-underline-from-left:hover:before,
+    .hvr-underline-from-left:focus:before,
+    .hvr-underline-from-left:active:before {
+      right: 0;
+    }
 
-		<div class="w3-black" id="about">
-			<div class="m6">
+    .w3-border:hover {
+      border: 0.3px solid;
+      transition-duration: 0.3s;
+      border-radius: 10px 0 10px 0;
+    }
 
-				<div class="w3-container w3-padding-top mt-10 w3-padding-top" data-aos="fade-up">
-					
-										<p>
-											<span class="text-2xl ">Sabarish</span>
-											<span class="w3-text-large pt-4">Experience Design. Development</span>
-										</p>
-				</div>
-				
-			</div>
-		</div>
+    .container-o {
+      position: relative;
+    }
 
+    .image-o {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
 
-		<div id="">
-			<div class="w3-row w3-padding-16 w3-black" data-aos="fade-up" id="about">
-				<div class=" m6 w3-center">
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: #008cba;
+    }
 
-  </div>
-	</div>
-	</div>
+    .container-o:hover .overlay {
+      opacity: 1;
+    }
 
-<script>
-AOS.init({
-  duration: 1200,
-})
-</script>
+    @font-face {
+      font-family: HelveticaNeue-Extended;
+      src: url("font.otf") format("opentype");
+    }
 
+    @font-face {
+      font-family: NSR;
+      src: url("nsr.ttf") format("opentype");
+    }
 
+    body,
+    h1,
+    h2,
+    h5,
+    h3,
+    h4,
+    a,
+    .button2 {
+      font-family: "HelveticaNeue-Extended", Arial;
+    }
 
+    .containere {
+      position: relative;
+      width: 100%;
+    }
 
-<!--<div class="w3-row-padding w3-container" data-aos="fade-up">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1 class="w3-text-black" >Spacesurf</h1>
-      <p class="w3-text-black ">A forum/blog site focussed on information & entertainment. Developed for sharing info and for resources.</p>
-			<button class="bg-white hover:bg-gray-900 p-3 clickableCursor mt-5 bg-white px-4 py-2 shadow-sm tracking-wider border text-gray-600 rounded-full hover:bg-gray-100 inline-flex items-center">
- <p class="text-xs">Read more</p> 
-</button>
-	<button class="bg-white hover:bg-gray-900 p-3 clickableCursor mt-5 bg-white px-4 py-2 shadow-sm tracking-wider border text-gray-600 rounded-full hover:bg-gray-100 inline-flex items-center animate-bounce">
- <p class="text-xs">Visit website</p> 
-</button>
-			
-		<!--<div class="p-5">
-		<a href="#records"><button type="button" id="" class=" one" ></button></a></div>
-</div>-->
+    .imagee {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
 
-    <!--<div class="w3-third w3-center w3-padding-16 box animate-bounce">
-      <img src="3663.png">
-    </div>
-  </div>
+    .overlaye {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgb(41, 0, 184);
+      background: linear-gradient(
+        45deg,
+        rgba(41, 0, 184, 1) 0%,
+        rgba(245, 0, 255, 1) 100%
+      );
+      overflow: hidden;
+      width: 0;
+      height: 100%;
+      transition: 0.5s ease;
+    }
+
+    .containere:hover .overlaye {
+      width: 100%;
+    }
+
+    .texte {
+      color: white;
+      font-size: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+    }
+
+    .text-2xl {
+      font-size: 55px;
+    }
+
+    p span {
+      display: block;
+    }
+
+    .mt-10 {
+      margin-top: 65px;
+      margin-left: 15px;
+    }
+		
+  </style>
+
+  <body class="w3-black">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <nav class="black" style="box-shadow: none;">
+      <div class="nav-wrapper container z-depth-0 no-shadows">
+        <a
+          href="#"
+          data-target="mobile-demo"
+          class="sidenav-trigger show-on-large"
+        >
+          <div id="menuToggle" data-aos="fade-up">
+            <span></span>
+            <span></span>
+            <span></span></div
+        ></a>
+        <ul class="sidenav w3-text-white" id="mobile-demo">
+          <li class="whitefont"><a href="/stories">Contact</a></li>
+          <li><a href="/stories">NextStage</a></li>
+          <li><a href="/dashboard">Github</a></li>
+          <li><a href="/auth/logout">Gallery</a></li>
+          <li><a href="/stories">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="w3-content" style="max-width: 1100px;">
+      <div class="w3-black" id="about">
+        <div class="m6">
+          <div class="w3-container w3-padding-top ml-10 w3-margin-top" data-aos="fade-up">
+            <p>
+              <span class="text-2xl">Sabarish</span>
+              <span class="w3-text-large pt-4"
+                >Experience Design. Development</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+			<div class="w3-padding-32 padding-large" id="example1" data-aos="fade-up">
+	<h1 class="w3-padding-side ml-10 txt--gradient-blue">SPACESURF</h1>
+	<p class="w3-padding-side ">A space, created for social interaction and information</p>
+	<button class="w3-padding-side ml-10 w3-margin-top">
+		View
+	</button>
 </div>
-<hr>-->
 
-<!--<div class="w3-row-padding w3-container w3-right-align" data-aos="fade-up">
-  <div class="w3-content one-third">
-		<div class="w3-third w3-center box w3-large">
-      <img src="https://cdn.dribbble.com/users/1140853/screenshots/3814158/rocket.gif">
-    </div>
-    <div class="w3-twothird">
-      <h1 class="w3-text-black">Spacesurf</h1>
-      <p class="w3-text-black ml-5">A forum/blog site focussed on information & entertainment. Developed for sharing info and for resources.</p>
-<button class=" p-3 clickableCursor mt-5 bg-black px-4 py-3  tracking-wider border text-gray-50 rounded-full hover:bg-gray-500 inline-flex items-center hover:text-black">
-      <p class="text-xs">Visit site</p> 
-</button>
-			
-		<!--<div class="p-5">
-		<a href="#records"><button type="button" id="" class=" one" ></button></a></div>-->
+      <script>
+        AOS.init({
+          duration: 1200
+        });
+      </script>
 
-<!--</div>
-    
-  </div>
-</div>-->
+      <div class="w3-content w3-black" style="max-width: 1100px;">
+        <div id="example1" class="mt-2" data-aos="fade-up">
+          <div class="m6 w3-padding-small w3-center">
+            <div class="h-16 grid grid-rows-1 grid-flow-col gap-4">
+              <div>
+                <a href="https://nextstage.in/" data-aos="fade-up"
+                  ><h5 class="mt-5 mb-2">NEXTSTAGE</h5></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <head>
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" type="text/css" href="gridify/style.css" />
+      </head>
 
-<div class="w3-content w3-black" style="max-width:1100px">
-<div id="example1" class="mt-2" data-aos="fade-up">
-<div class="m6 w3-padding-small w3-center">
+      <div class="container containergr w3-black mt-6">
+        <div data-gridify="3-columns">
+          <div class="itemg" data-aos="slide-up">
+            <div class="containere">
+              <img
+                src="https://github.com/SabarIshShankar/pic/blob/master/Frame%204.png?raw=true"
+                alt="Avatar"
+                class="imagfee"
+              />
+              <div class="overlaye">
+                <div class="texte">spacesurf</div>
+              </div>
+            </div>
+          </div>
 
-<div class="h-16 grid grid-rows-1 grid-flow-col gap-4">
+          <div class="itemg" data-aos="slide-up">
+            <div class="containere">
+              <img
+                src="https://github.com/SabarIshShankar/pic/blob/master/Frame%202.png?raw=true"
+                alt="Avatar"
+                class="imagee"
+              />
+              <div class="overlaye">
+                <div class="texte">spacesurf</div>
+              </div>
+            </div>
+          </div>
 
-  <div>
-		<a href="https://nextstage.in/" data-aos="fade-up" ><h5  class="mt-5 mb-2">NEXTSTAGE</h5></a>
-		</div>
-  <div>
-		<a href="https://spacesurf.club/casestudies.html" data-aos="fade-up" ><h5 class="mt-5 mb-2">SPACESURF</h5></a>
-		</div>
-</div>
-	
+          <div class="itemg" data-aos="slide-up">
+            <div class="containere">
+              <img
+                src="https://github.com/SabarIshShankar/pic/blob/master/Frame%2028.png?raw=true"
+                alt="Avatar"
+                class="imagee"
+              />
+              <div class="overlaye">
+                <div class="texte">spacesurf</div>
+              </div>
+            </div>
+          </div>
 
+          <div class="itemg" data-aos="slide-up">
+            <div class="containere">
+              <img
+                src="https://github.com/SabarIshShankar/pr/blob/master/images/3.png?raw=true"
+                alt="Avatar"
+                class="imagee"
+              />
+              <div class="overlaye">
+                <div class="texte">spacesurf</div>
+              </div>
+            </div>
+          </div>
 
-
-
-</div>
-</div>
-</div>
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="gridify/style.css">
-</head>
-
-
-	<div class="container containergr w3-black mt-6">
-		<div data-gridify="3-columns">
-			<div class="itemg" data-aos="slide-up">
-
-					<div class="containere">
-  <img src="https://github.com/SabarIshShankar/pic/blob/master/Frame%204.png?raw=true" alt="Avatar" class="imagfee">
-  <div class="overlaye">
-    <div class="texte">spacesurf</div>
-  </div>
-</div>
-				</div>
-
-						<div class="itemg" data-aos="slide-up">
-			
-			<div class="containere">
-  <img src="https://github.com/SabarIshShankar/pic/blob/master/Frame%202.png?raw=true" alt="Avatar" class="imagee">
-  <div class="overlaye">
-    <div class="texte">spacesurf</div>
-  </div>
-</div>
-</div>
-
-				
-				
-		<div class="itemg" data-aos="slide-up">
-			<div class="containere">
-  <img src="https://github.com/SabarIshShankar/pic/blob/master/Frame%2028.png?raw=true" alt="Avatar" class="imagee">
-  <div class="overlaye">
-    <div class="texte">spacesurf</div>
-  </div>
-</div>
-			</div>
-
-
-
-		<div class="itemg" data-aos="slide-up">
-			<div class="containere">
-  <img src="https://github.com/SabarIshShankar/pr/blob/master/images/3.png?raw=true" alt="Avatar" class="imagee">
-  <div class="overlaye">
-    <div class="texte">spacesurf</div>
-  </div>
-</div>
-			</div>
-
-		<!--<div class="itemg" data-aos="slide-up">
+          <!--<div class="itemg" data-aos="slide-up">
 			<img class="img-fluid hoverr" src="https://github.com/SabarIshShankar/pic/blob/master/Frame%2027.png?raw=true">
 			</div>-->
 
-		<!--<div class="itemg" data-aos="slide-up">
+          <!--<div class="itemg" data-aos="slide-up">
 			<img class="img-fluid hoverr" src="https://github.com/SabarIshShankar/pic/blob/master/Frame%2045.png?raw=true">
 			</div>-->
-			
-			<div class="itemg" data-aos="slide-up">
-				
-					<div class="containere">
-  <img src="https://github.com/SabarIshShankar/pr/blob/master/images/1.png?raw=true" alt="Avatar" class="imagee">
-  <div class="overlaye">
-    <div class="texte">spacesurf</div>
-  </div>
-</div>
-					</div>
-			
-		<div class="itemg" data-aos="slide-up">
-			<img class="img-fluid hoverr" src="">
-			</div>
 
-			<!--<div class="itemg" data-aos="slide-up">
+          <div class="itemg" data-aos="slide-up">
+            <div class="containere">
+              <img
+                src="https://github.com/SabarIshShankar/pr/blob/master/images/1.png?raw=true"
+                alt="Avatar"
+                class="imagee"
+              />
+              <div class="overlaye">
+                <div class="texte">spacesurf</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="itemg" data-aos="slide-up">
+            <img class="img-fluid hoverr" src="" />
+          </div>
+
+          <!--<div class="itemg" data-aos="slide-up">
 			<img class="img-fluid hoverr" src="https://github.com/SabarIshShankar/pic/blob/master/Frame%206%20(01).png?raw=true">
 
 			</div>-->
-				<!--<div class="itemg" data-aos="slide-up">
+          <!--<div class="itemg" data-aos="slide-up">
 			<img class="img-fluid hoverr" src="https://github.com/SabarIshShankar/pic/blob/master/Frame%205%20(03).png?raw=true">
 			</div>-->
-			
 
-				
-
-
-				
-
-				<!--
+          <!--
 						<div class="item"><img class="img-fluid" src="http://www.placehold.space/400"></div>
 								<div class="item"><img class="img-fluid" src="http://www.placehold.space/400"></div>
 		<div class="item"><img class="img-fluid" src="http://www.placehold.space/400"></div>
 		<div class="item"><img class="img-fluid" src="http://www.placehold.space/400"></div>
 		<div class="item"><img class="img-fluid" src="http://www.placehold.space/400"></div>-->
-	</div>
-</div>
-<script type="text/javascript" src="gridify/gridify.min.js"></script>
-<script type="text/javascript">
-window.onload = function() {
-	gridify.init();
-};
-</script>
+        </div>
+      </div>
+      <script type="text/javascript" src="gridify/gridify.min.js"></script>
+      <script type="text/javascript">
+        window.onload = function () {
+          gridify.init();
+        };
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+        M.Sidenav.init(document.querySelector(".sidenav"));
+        M.FormSelect.init(document.querySelector("#status"));
+      </script>
+    </div>
+    <div id="root"></div>
+    <footer class="w3-container w3-center w3-black">
+      <div class="grid grid-cols-3 gap-4 w3-padding w3-text-white">
+        <div><a href="https://www.github.com/SabarIshShankar">Github</a></div>
+        <div><a href="/resume">Resume</a></div>
+        <div><a href="/contact">Contact</a></div>
+      </div>
+    </footer>
 
-
-<!--<div class="w3-content" style="max-width:900px">
-<div class="w3-row" style="margin-bottom:128px">
-  
-  <div class="w3-third">
-    <img data-aos="slide-up"class="w3-padding"src="3663.png" style="width:100%">
-    <img data-aos="fade-up"class="w3-padding"src="363.png" style="width:100%">
-    <img data-aos="fade-up"class="w3-padding"src="3662.png" style="width:100%">
-    <img data-aos="fade-up"class="w3-padding"src="3663.png" style="width:100%">
-    <img data-aos="slide-up"class="w3-padding"src="363.png" style="width:100%">
-    <img data-aos="fade-up"class="w3-padding"src="3663.png" style="width:100%">
-  </div>
-	<div class="w3-third">
-    <img data-aos="slide-up"class="w3-padding-top" src="images/6.png" style="width:100%">
-    <img data-aos="slide-up"class="w3-padding-top"src="https://github.com/SabarIshShankar/pic/blob/master/pr/Frame%2010%20(2).png?raw=true" style="width:100%">
-    <img data-aos="slide-up"class="w3-padding-top"src="https://github.com/SabarIshShankar/pic/blob/master/pr/Frame%209.png?raw=true" style="width:100%">
-    <img data-aos="slide-up"class="w3-padding-top"src="https://spacesurf.club/images/3.png" style="width:100%">
-    <img data-aos="slide-up"class="w3-padding-top"src="23.png" style="width:100%">
-    <img data-aos="slide-up"class="w3-padding-top"src="363.png" style="width:100%">
-  </div>
-	  <div class="w3-third">
-    <img data-aos="slide-up"class="w3-padding"src="3663.png" style="width:100%">
-    <img data-aos="fade-up"class="w3-padding"src="363.png" style="width:100%">
-    <img data-aos="fade-up"class="w3-padding"src="3662.png" style="width:100%">
-    <img data-aos="fade-up"class="w3-padding"src="3663.png" style="width:100%">
-    <img data-aos="slide-up"class="w3-padding"src="363.png" style="width:100%">
-    <img data-aos="fade-up"class="w3-padding"src="3663.png" style="width:100%">
-  </div>
-</div>
-</div>-->
-
-
-
-</div>
-<div id="root"></div>
-<footer class="w3-container w3-center w3-black" >
-					<div class="grid grid-cols-3 gap-4 w3-padding w3-text-white">
-  <div><a href="https://www.github.com/SabarIshShankar">Github</a></div>
-  <div><a href="/resume">Resume</a></div>
-  <div><a href="/contact">Contact</a></div>
-	
-</div>
-				
-</footer>
-
-
-<script src=".js"></script>
+    <script src=".js"></script>
     <script>
-			const navToggle = document.querySelector(".nav-toggle");
-const links = document.querySelector(".links");
-const socialIcons = document.querySelector(".social-icons");
+      const navToggle = document.querySelector(".nav-toggle");
+      const links = document.querySelector(".links");
+      const socialIcons = document.querySelector(".social-icons");
 
-navToggle.addEventListener("click", function () {
-  console.log(links.classList);
-  links.classList.toggle("show-links");
-  socialIcons.classList.toggle("show-icons");
-});
-
-		</script>
+      navToggle.addEventListener("click", function () {
+        console.log(links.classList);
+        links.classList.toggle("show-links");
+        socialIcons.classList.toggle("show-icons");
+      });
+    </script>
   </body>
 </html>
