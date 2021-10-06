@@ -264,3 +264,5 @@ a {
 }
 
 
+@import url(//db.onlinewebfonts.com/c/32439590f99f4c85f653dddb5c1e2118?family=Helvetica+Neue+WGL);
+@font-face {font-family: "Helvetica Neue WGL"; src: url("//db.onlinewebfonts.com/t/32439590f99f4c85f653dddb5c1e2118.eot"); src: url("//db.onlinewebfonts.com/t/32439590f99f4c85f653dddb5c1e2118.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/32439590f99f4c85f653dddb5c1e2118.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/32439590f99f4c85f653dddb5c1e2118.woff") format("woff"), url("//db.onlinewebfonts.com/t/32439590f99f4c85f653dddb5c1e2118.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/32439590f99f4c85f653dddb5c1e2118.svg#Helvetica Neue WGL") format("svg"); }

@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 	<title>SPACESURF</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<link href=".css" rel="stylesheet" type="text/css" />
@@ -204,6 +205,7 @@
 
 	.w3-padding-side {
 		margin-left: 20px;
+		margin-right: 10px;
 	}
 
 	button {
@@ -240,14 +242,14 @@
 
 <style>
 	#img {
-		background: url(https://ipfs.pixura.io/ipfs/QmWMThLe1MLPHUHHfqMm79ZtALAfVUycN6jKLgnuqmcWZF);
+		background: linear-gradient(35deg, rgba(0,6,130,1) 0%, rgba(228,0,255,1) 71%, rgba(255,0,0,1) 100%);
 		background-repeat: no-repeat;
 		background-size: auto;
 		background-attachment: fixed;
 	}
 
 	#example1 {
-		background: url(https://cdnb.artstation.com/p/assets/images/images/034/931/443/large/muhammx-nafay-insta-le_nafay-clouds-city.jpg?1613633259);
+		background: linear-gradient(45deg, rgba(255,135,147,1) 0%, rgba(141,50,181,1) 55%, rgba(20,0,168,1) 100%);
 		background-repeat: no-repeat;
 		background-size: auto;
 		background-attachment: fixed;
@@ -370,7 +372,7 @@
 		overflow: hidden;
 		width: 0;
 		height: 100%;
-		transition: 0.5s ease;
+		transition: 1s ease;
 	}
 
 	.containere:hover .overlaye {
@@ -413,7 +415,7 @@
 	}
 
 	.sidenav {
-		transition: 0.03s;
+		transition: 0.5s;
 	}
 
 	.black {
@@ -428,15 +430,28 @@
 		padding: 10px;
 		color: white
 	}
+	.grid-container1 {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		grid-gap: 8px;
+		padding: 6px;
+		color: black
+	}
 
 	.grid-container>div {
 		text-align: center;
 		padding: 0px 0;
 		font-size: 14px;
 	}
+	.grid-container1>div {
+		text-align: center;
+		padding: 0px 0;
+		font-size: 12px;
+	}
 	button{
-		color: black;
-		background: white;
+		color: white;
+		background: none;
+		border: 0.5px solid #d9d9d9;
 	}
 	.button1{
 		color: white;
@@ -451,22 +466,31 @@
 	.txt-gradient-blue{
 		font-size: 25px;
 	}
-
+.nav-wrapper1 {
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  }
 
 </style>
 
-<body class="">
+<body class="w3-content" style="max-width: 1100px;">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 	<nav class="white" style="box-shadow: none;">
 		<div class="nav-wrapper container z-depth-0 no-shadows">
+
+			
+
+			
 			<a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large">
 				<div id="menuToggle" data-aos="fade-up">
 					  <span></span>
             <span></span>
             <span></span>
-						</div
-        >
+					</div>
 				</a>
+				<a href="#!" class="tr w3-right w3-text-black w3-text-small w3-padding-small" data-aos="fade-up"><p>Resume</p></a>
+				
+
         <ul class="sidenav w3-text-black" id="mobile-demo">
           <li><a href="/contact" target="_blank">Contact</a></li>
           <li><a href="https://nextstage.in" target="_blank">NextStage</a></li>
@@ -477,7 +501,20 @@
       </div>
     </nav>
 
-    <div class="w3-content mb-10" style="max-width: 1100px;">
+
+
+		
+    <div class="w3-content mb-10">
+
+			<!--<div class="w3-center center" data-aos="fade-up">
+		<div class="grid-container1">
+  <div class="item2" id=""><a href="https://www.github.com/SabarIshShankar" target="_blank">Github</a></div>
+  <div class="item3"><a target="_blank" href="/resume">Resume</a></div>  
+  <div class="item4"><a target="_blank" href="/contact">Contact</a></div>
+	<div class="item4"><a target="_blank" href="/contact">Dribbble</a></div>
+</div>
+    </div>-->
+
       <div class="w3-text-black" id="about">
         <div class="m6">
           <div class="w3-container w3-padding-top ml-10 w3-margin-top" data-aos="fade-up">
@@ -491,7 +528,7 @@
         </div>
       </div>
 
-			<div class="w3-padding-32 padding-large w3-margin-top" id="example1" data-aos="fade-up">
+			<div class="w3-padding-32 w3-margin-top" id="img" data-aos="fade-up">
 	<h1 class="w3-padding-side ml-10 txt--gradient-blue">SPACESURF</h1>
 	<p class="w3-padding-side ">A space, created for social interaction and information</p>
 	<a href="https://app.spacesurf.club" target="_blank"><button class="w3-padding-side ml-10 w3-margin-top">
@@ -499,7 +536,16 @@
 	</button></a>
 </div>
 
-<div class="w3-padding-32 padding-large w3-margin-top" id="" data-aos="fade-up">
+<div class="w3-center center w3-padding-top" data-aos="fade-up">
+		<div class="grid-container">
+  <div class="item2" id=""><a href="https://www.github.com/SabarIshShankar" target="_blank">Github</a></div>
+  <div class="item3"><a target="_blank" href="/resume">Resume</a></div>  
+  <div class="item4"><a target="_blank" href="/contact">Contact</a></div>
+</div>
+    </div>
+
+
+<div class="w3-padding-32 padding-large w3-margin-top" data-aos="fade-up">
 	<h1 class="w3-padding-side ml-10 txt-gradient-blue w3-text-black">NEXTSTAGE</h1>
 	<p class="w3-padding-side w3-text-black">Market research, Case studies and Business</p>
 	<a href="https://app.spacesurf.club" target="_blank"><button class="button1 w3-padding-side ml-10 w3-margin-top">
