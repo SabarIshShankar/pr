@@ -14,6 +14,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=DM+Sans"
     />
+		<link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Space+Grotesk"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
     <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
     <link
@@ -271,12 +275,7 @@
 
   <style>
     #img {
-      background: linear-gradient(
-        35deg,
-        rgba(0, 6, 130, 1) 0%,
-        rgba(228, 0, 255, 1) 71%,
-        rgba(255, 0, 0, 1) 100%
-      );
+      background: linear-gradient(35deg, rgba(0,0,0,1) 0%, rgba(38,29,61,1) 63%, rgba(55,14,159,1) 100%);
       background-repeat: no-repeat;
       background-size: auto;
       background-attachment: fixed;
@@ -413,6 +412,7 @@
       width: 0;
       height: 100%;
       transition: 1s ease;
+			opacity: 1;
     }
 
     .containere:hover .overlaye {
@@ -518,6 +518,10 @@
       -webkit-backdrop-filter: blur(2px);
       backdrop-filter: blur(2px);
     }
+		.column.size-1of3 {
+	width: 50%;
+	float: left;
+}
   </style>
 
   <body class="">
@@ -586,7 +590,7 @@
       </div>
 
 
-			<div class="wp-block-cover-image has-background-dim" style="background-image:url(https://leap-in.com/wp-content/uploads/2018/07/beach-exotic-holiday-248797.jpg)">
+			<div class="wp-block-cover-image has-background-dim" style="background-image:url(imgs/6.png)">
     <p class="wp-block-cover-image-text">Parallax 3</p>
   </div>
 
@@ -643,12 +647,12 @@
 
       <div class="container containergr w3-margin-top">
         <div data-gridify="3-columns">
-          <div class="itemg" data-aos="slide-up">
-            <div class="containere effect effect-twelve">
+					<div class="itemg" data-aos="slide-up">
+            <div class="containere">
               <img
-                src="https://raw.githubusercontent.com/SabarIshShankar/pic/master/Frame%204.png"
+                src="imgs/1.png"
                 alt="Avatar"
-                class="imagfee"
+                class="imagee"
               />
               
             </div>
@@ -657,33 +661,40 @@
           <div class="itemg" data-aos="slide-up">
             <div class="containere">
               <img
-                src="https://raw.githubusercontent.com/SabarIshShankar/pr/master/images/3.png"
+                src="imgs/2.png"
                 alt="Avatar"
                 class="imagee"
               />
-              <div class="overlaye">
-                <div class="texte">spacesurf</div>
-              </div>
+              
             </div>
           </div>
 
           <div class="itemg" data-aos="slide-up">
             <div class="containere">
               <img
-                src="https://raw.githubusercontent.com/SabarIshShankar/pr/master/images/1.png"
+                src="imgs/3.png"
                 alt="Avatar"
                 class="imagee"
               />
-              <div class="overlaye">
-                <div class="texte">spacesurf</div>
-              </div>
+              
             </div>
           </div>
 
           <div class="itemg" data-aos="slide-up">
             <div class="containere">
               <img
-                src="https://raw.githubusercontent.com/SabarIshShankar/pic/master/Frame%2028.png"
+                src="imgs/4.png"
+                alt="Avatar"
+                class="imagee"
+              />
+              
+            </div>
+          </div>
+
+          <div class="itemg" data-aos="slide-up">
+            <div class="containere">
+              <img
+                src="imgs/5.png"
                 alt="Avatar"
                 class="imagee"
               />
@@ -693,66 +704,12 @@
             </div>
           </div>
 
-          <div class="itemg" data-aos="slide-up">
-            <div class="containere">
-              <img
-                src="https://raw.githubusercontent.com/SabarIshShankar/pic/master/profile/Frame%2039.png"
-                alt="Avatar"
-                class="imagee"
-              />
-              <div class="overlaye">
-                <div class="texte">spacesurf1</div>
-              </div>
-            </div>
-          </div>
 
-          <div class="itemg" data-aos="slide-up">
-            <div class="containere">
-              <img
-                src="https://raw.githubusercontent.com/SabarIshShankar/pic/master/profile/Frame%2011%20(1).png"
-                alt="Avatar"
-                class="imagee"
-              />
-              <div class="overlaye">
-                <div class="texte">spacesurf1</div>
-              </div>
-            </div>
-          </div>
 
-          <div class="itemg" data-aos="slide-up">
-            <div class="containere">
-              <img
-                src="https://raw.githubusercontent.com/SabarIshShankar/pic/master/Frame%202.png"
-                alt="Avatar"
-                class="imagee"
-              />
-              <div class="overlaye">
-                <div class="texte">spacesurf1</div>
-              </div>
-            </div>
-          </div>
 
-          <div class="itemg" data-aos="slide-up">
-            <div class="containere">
-              <img
-                src="https://raw.githubusercontent.com/SabarIshShankar/pic/master/Frame%2045.png"
-                alt="Avatar"
-                class="imagee"
-              />
-              <div class="overlaye">
-                <div class="texte">spacesurf</div>
-              </div>
-            </div>
-          </div>
 
-          <div class="itemg" data-aos="slide-up">
-            <div class="containere">
-              <img src="/images/03.jpg" alt="Avatar" class="imagee" />
-              <div class="overlaye">
-                <div class="texte">spacesurf</div>
-              </div>
-            </div>
-          </div>
+
+          
         </div>
       </div>
 
@@ -767,6 +724,27 @@
           </button></a
         >
       </div>
+
+			<script
+  src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
+>
+</script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+  rel="stylesheet"
+  href="graph.css"
+/>
+
+<!-- Prepare a container for your calendar. 
+<div class="calendar">
+    
+    Loading the data just for you.
+</div>-->
+
+<!--<script>
+    new GitHubCalendar(".calendar", "SabarIshShankar");
+</script>-->
 
       <div class="center">
         <!--<h1 class="w3-padding-side ml-10 txt-gradient-blue w3-text-white"></h1>
