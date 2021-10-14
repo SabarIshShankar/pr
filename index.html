@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width" />
     <meta
       name="viewport"
-      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"
     />
     <title>SPACESURF</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href=".css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=DM+Sans"
@@ -42,7 +41,6 @@
     />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -57,6 +55,9 @@
 
       gtag("config", "G-8T1YQ608GS");
     </script>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!--meta.seo-->
     <meta name="description" content="Sabarish" />
@@ -92,20 +93,6 @@
   />
   <style>
     @import url(//db.onlinewebfonts.com/c/3cff9206b4c8d578245ef1aaeeaf9e84?family=SF + Pro + Display);
-    @font-face {
-      font-family: "SF Pro Display";
-      src: url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.eot");
-      src: url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.eot?#iefix")
-          format("embedded-opentype"),
-        url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.woff2")
-          format("woff2"),
-        url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.woff")
-          format("woff"),
-        url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.ttf")
-          format("truetype"),
-        url("//db.onlinewebfonts.com/t/3cff9206b4c8d578245ef1aaeeaf9e84.svg#SF Pro Display")
-          format("svg");
-    }
 
     .button {
       width: 250px;
@@ -370,10 +357,6 @@
       src: url("font.otf") format("opentype");
     }
 
-    @font-face {
-      font-family: NSR;
-      src: url("nsr.ttf") format("opentype");
-    }
 
     body,
     h1,
@@ -452,6 +435,7 @@
       transition: 0.6s;
       -webkit-transform: translate(5%, 5%);
       color: white;
+			border-radius: 6px;
     }
 
     .sidenav {
@@ -522,7 +506,10 @@
 	width: 50%;
 	float: left;
 }
+body { margin: 0; padding:0;  }
+
   </style>
+
 
   <body class="">
     <link
@@ -775,8 +762,6 @@
         <div class="item4"><a target="_blank" href="/contact">Contact</a></div>
       </div>
     </footer>
-
-    <script src=".js"></script>
     <script>
       const navToggle = document.querySelector(".nav-toggle");
       const links = document.querySelector(".links");
